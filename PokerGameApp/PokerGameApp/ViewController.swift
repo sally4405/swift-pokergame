@@ -1,6 +1,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let stackView = UIStackView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -9,24 +10,27 @@ class ViewController: UIViewController {
             self.view.backgroundColor = UIColor(patternImage: backgroundImage)
         }
         
-        (0...6).forEach { setupView(leadingTag: CGFloat($0)) }
+        setupStackView()
+        
+        for _ in 0...6 {
+            let cardImageView = CardImageView(frame: CGRect())
+            stackView.addSubview(cardImageView)
+        }
+        stackView.axis = .vertical
+        stackView.alignment = .fill
     }
     
-    func setupView(leadingTag: CGFloat) {
-        let cardView = UIImageView()
-        cardView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(cardView)
-
-        let aspectRatio: CGFloat = 1.27 / 1
-        let widthRatio: CGFloat = 1 / 7
+    func setupStackView() {
+        self.stackView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(stackView)
         
-        cardView.image = UIImage(named: "card-back")
-
+        let aspectRatio: CGFloat = 1.27 / 7
+        
         NSLayoutConstraint.activate([
-            cardView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8),
-            cardView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: leadingTag * view.frame.width * widthRatio),
-            cardView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: widthRatio),
-            cardView.heightAnchor.constraint(equalTo: cardView.widthAnchor, multiplier: aspectRatio)
+            self.stackView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 8),
+            self.stackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            self.stackView.widthAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.widthAnchor),
+            self.stackView.heightAnchor.constraint(equalTo: self.stackView.widthAnchor, multiplier: aspectRatio)
         ])
     }
     

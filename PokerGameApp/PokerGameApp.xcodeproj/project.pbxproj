@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F8EA4B627F2E4E600CD8227 /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EA4B527F2E4E600CD8227 /* CardImageView.swift */; };
+		6F8EA4B827F2E51F00CD8227 /* CardImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F8EA4B727F2E51F00CD8227 /* CardImageView.xib */; };
 		6FDBE89A27C471CE00B32FC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDBE89927C471CE00B32FC6 /* AppDelegate.swift */; };
 		6FDBE89C27C471CE00B32FC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDBE89B27C471CE00B32FC6 /* SceneDelegate.swift */; };
 		6FDBE89E27C471CE00B32FC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDBE89D27C471CE00B32FC6 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F8EA4B527F2E4E600CD8227 /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
+		6F8EA4B727F2E51F00CD8227 /* CardImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardImageView.xib; sourceTree = "<group>"; };
 		6FDBE89627C471CE00B32FC6 /* PokerGameApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerGameApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FDBE89927C471CE00B32FC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FDBE89B27C471CE00B32FC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				6FDBE89927C471CE00B32FC6 /* AppDelegate.swift */,
 				6FDBE89B27C471CE00B32FC6 /* SceneDelegate.swift */,
 				6FDBE89D27C471CE00B32FC6 /* ViewController.swift */,
+				6F8EA4B527F2E4E600CD8227 /* CardImageView.swift */,
+				6F8EA4B727F2E51F00CD8227 /* CardImageView.xib */,
 				6FDBE89F27C471CE00B32FC6 /* Main.storyboard */,
 				6FDBE8A227C471CF00B32FC6 /* Assets.xcassets */,
 				6FDBE8A427C471CF00B32FC6 /* LaunchScreen.storyboard */,
@@ -127,6 +133,7 @@
 			files = (
 				6FDBE8A627C471CF00B32FC6 /* LaunchScreen.storyboard in Resources */,
 				6FDBE8A327C471CF00B32FC6 /* Assets.xcassets in Resources */,
+				6F8EA4B827F2E51F00CD8227 /* CardImageView.xib in Resources */,
 				6FDBE8A127C471CE00B32FC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F8EA4B627F2E4E600CD8227 /* CardImageView.swift in Sources */,
 				6FDBE89E27C471CE00B32FC6 /* ViewController.swift in Sources */,
 				6FDBE89A27C471CE00B32FC6 /* AppDelegate.swift in Sources */,
 				6FDBE89C27C471CE00B32FC6 /* SceneDelegate.swift in Sources */,
